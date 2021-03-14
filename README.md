@@ -15,6 +15,7 @@ https://app.stormgain.com/
 6) Build the executable .JAR file and you're ready to go
 
 =======================================================================================
+
 Requirements:
 
 1) selenium library (java):
@@ -23,6 +24,7 @@ https://selenium-release.storage.googleapis.com/3.141/selenium-java-3.141.59.zip
 2) free/paid vps from azure/google/aws, you can google for free vps methods.... i will upload my own methods if you are interested :)
 
 =======================================================================================
+
 VARS:
 
 accounts // accounts list
@@ -39,6 +41,7 @@ max_attempts // if something wrong happened how many times we can try it again
 
 
 =======================================================================================
+
 imagine using only 1 account, how much you can earn per month:
 you can earn 0.0247321428571429$ / hour
 that means you can earn up to 4$ / week
