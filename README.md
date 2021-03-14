@@ -23,6 +23,13 @@ https://selenium-release.storage.googleapis.com/3.141/selenium-java-3.141.59.zip
 2) free/paid vps from azure/google/aws, you can google for free vps methods.... i will upload my own methods if you are interested :)
 
 
+VARS:
+accounts // accounts list
+enable_cookies // use cookies ?
+silent_mode // gui mode or silent mode
+times // how many times repeat the same mining process
+sleep //hours between mining process
+max_attempts // if something wrong happened how many times we can try it again
 
 imagine using only 1 account, how much you can earn per month:
 you can earn 0.0247321428571429$ / hour
