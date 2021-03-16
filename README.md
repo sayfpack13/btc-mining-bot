@@ -15,9 +15,11 @@ for linux/ubuntu/debian:
 
 sudo apt-get update
  
+sudo apt upgrade
+
 sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 
-sudo apt-get install default-jdk 
+sudo apt install openjdk-14-jdk
 
 sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
 
@@ -27,7 +29,7 @@ sudo apt-get -y update
 
 sudo apt-get -y install google-chrome-stable
 
-wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip
 
 unzip chromedriver_linux64.zip
 
