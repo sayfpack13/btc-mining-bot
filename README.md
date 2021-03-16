@@ -12,9 +12,8 @@ for linux/ubuntu/debian:
 1) btc_linux.jar + accounts.txt in same folder 
 
 
-installation commands for chromedriver + java
 
-2) sudo apt-get update
+sudo apt-get update
  
 sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 
