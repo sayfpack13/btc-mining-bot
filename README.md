@@ -15,7 +15,7 @@ for linux/ubuntu/debian:
 installation commands for chromedriver + java
 
 2) sudo apt-get update
-3) 
+ 
 sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 
 sudo apt-get install default-jdk 
@@ -40,7 +40,9 @@ sudo chmod +x /usr/bin/chromedriver
 
 
 
+
 =======================================================================================
+
 Usage:
 
 1) Create as many accounts as you can on this website:
@@ -51,6 +53,7 @@ https://app.stormgain.com/
 4) You can use cookies, which is not necessary because I only added them to bypass the cloudflare protection of other websites
 
 6) Build the executable .JAR file and you're ready to go
+
 
 =======================================================================================
 
