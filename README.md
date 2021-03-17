@@ -15,8 +15,8 @@ A simple selenium java project for mining bitcoin online using free mining web s
 
 sudo apt-get update
 
-sudo apt-get install -y curl unzip xvfb libxi6 libgconf-2-4
- 
+sudo apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+
 sudo apt upgrade
 
 sudo mkdir /usr/java
@@ -40,13 +40,11 @@ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk-14/bin/
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/java/jdk-14/bin/javac" 1
 
 
-sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
-sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update 
 
-sudo apt-get -y update
-
-sudo apt-get -y install google-chrome-stable
+sudo apt-get install google-chrome-stable
 
 wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip
 
