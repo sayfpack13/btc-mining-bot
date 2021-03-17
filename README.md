@@ -17,9 +17,21 @@ sudo apt-get update
  
 sudo apt upgrade
 
-sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
+sudo mkdir /usr/java
+cd /usr/java
+wget https://download.java.net/openjdk/jdk14/ri/openjdk-14+36_linux-x64_bin.tar.gz
+sudo tar -xzvf openjdk-14+36_linux-x64_bin.tar.gz
+sudo nano /etc/profile
 
-sudo apt install openjdk-14-jdk
+# OpenJDK 14
+JAVA_HOME=/usr/java/jdk-14
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export PATH
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk-14/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/java/jdk-14/bin/javac" 1
+
 
 sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
 
