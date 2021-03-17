@@ -2,26 +2,33 @@
 
 A simple selenium java project for mining bitcoin online using free mining web services.
 
-Installation:
+# Installation
 
-for windows:
+# for windows
 1) btc.jar + chromedriver.exe + accounts.txt in same folder 
 
-for linux/ubuntu/debian:
+# for debian...
 
 1) btc_linux.jar + accounts.txt in same folder 
 
 
 
 sudo apt-get update
+
+sudo apt-get install -y curl unzip xvfb libxi6 libgconf-2-4
  
 sudo apt upgrade
 
 sudo mkdir /usr/java
+
 cd /usr/java
+
 wget https://download.java.net/openjdk/jdk14/ri/openjdk-14+36_linux-x64_bin.tar.gz
+
 sudo tar -xzvf openjdk-14+36_linux-x64_bin.tar.gz
+
 sudo nano /etc/profile
+
 
 # OpenJDK 14
 JAVA_HOME=/usr/java/jdk-14
@@ -56,7 +63,7 @@ sudo chmod +x /usr/bin/chromedriver
 
 =======================================================================================
 
-Usage:
+# Usage
 
 1) Create as many accounts as you can on this website:
 https://app.stormgain.com/
@@ -70,7 +77,7 @@ https://app.stormgain.com/
 
 =======================================================================================
 
-Requirements:
+# Requirements
 
 1) selenium library (java):
 https://selenium-release.storage.googleapis.com/3.141/selenium-java-3.141.59.zip
