@@ -60,7 +60,7 @@ npm i chromedriver
 
 
 4)
-wget https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/
+wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip
 
 unzip chromedriver_linux64.zip
 
