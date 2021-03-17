@@ -40,11 +40,12 @@ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk-14/bin/
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/java/jdk-14/bin/javac" 1
 
 
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-sudo apt-get update 
+sudo apt install ./google-chrome-stable_current_amd64.deb
 
-sudo apt-get install google-chrome-stable
+sudo apt install google-chrome-stable
+
 
 wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip
 
