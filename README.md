@@ -7,7 +7,7 @@ A simple selenium java project for mining bitcoin online using free mining web s
 # for windows
 1) btc.jar + chromedriver.exe + accounts.txt in same folder 
 
-# for debian...
+# for Ubuntu 16/18...
 
 1) btc_linux.jar + accounts.txt in same folder 
 
@@ -15,7 +15,7 @@ A simple selenium java project for mining bitcoin online using free mining web s
 2)
 sudo apt-get update
 
-sudo apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-dev
+sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 
 sudo apt upgrade
 
@@ -44,23 +44,19 @@ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk-14/bin/
 
 sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/java/jdk-14/bin/javac" 1
 
+
 3)
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
 
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
 
-sudo apt install google-chrome-stable
+sudo apt-get -y update
 
-apt-get -f install
+sudo apt-get -y install google-chrome-stable
 
-sudo apt-get install -y xvfb
+apt install npm
 
-sudo apt-get -y install xorg xvfb gtk2-engines-pixbuf
-
-sudo apt-get -y install dbus-x11 xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic xfonts-scalable
-
-sudo apt-get -y install imagemagick x11-apps
-
+npm i chromedriver
 
 
 4)
