@@ -31,9 +31,13 @@ sudo nano /etc/profile
 
 
 # OpenJDK 14
+
 JAVA_HOME=/usr/java/jdk-14
+
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+
 export JAVA_HOME
+
 export PATH
 
 sudo update-alternatives --install "/usr/bin/java" "java" "/usr/java/jdk-14/bin/java" 1
@@ -42,10 +46,11 @@ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/java/jdk-14/bi
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 sudo apt install google-chrome-stable
 
+apt-get -f install
 
 wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip
 
