@@ -53,6 +53,16 @@ sudo apt install google-chrome-stable
 
 apt-get -f install
 
+sudo apt-get install -y xvfb
+
+sudo apt-get -y install xorg xvfb gtk2-engines-pixbuf
+
+sudo apt-get -y install dbus-x11 xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic xfonts-scalable
+
+sudo apt-get -y install imagemagick x11-apps
+
+
+
 4)
 wget https://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip
 
