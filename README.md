@@ -54,9 +54,9 @@ sudo apt-get -y update
 
 sudo apt-get -y install google-chrome-stable
 
-apt install npm
+//apt install npm
 
-npm i chromedriver
+//npm i chromedriver
 
 
 4)
@@ -71,7 +71,21 @@ sudo chown root:root /usr/bin/chromedriver
 sudo chmod +x /usr/bin/chromedriver
 
 
+5)
+# memory swap
+sudo fallocate -l 3G /swapfile
 
+sudo dd if=/dev/zero of=/swapfile bs=3072 count=3145728
+
+sudo chmod 600 /swapfile
+
+sudo mkswap /swapfile
+
+sudo swapon /swapfile
+
+sudo nano /etc/fstab
+
+/swapfile swap swap defaults 0 0
 
 =======================================================================================
 
