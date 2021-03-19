@@ -73,19 +73,27 @@ sudo chmod +x /usr/bin/chromedriver
 
 5)
 # memory swap
-sudo fallocate -l 3G /swapfile
+sudo fallocate -l 1G /swapfile
 
-sudo dd if=/dev/zero of=/swapfile bs=3072 count=3145728
+ls -lh /swapfile
 
 sudo chmod 600 /swapfile
+
+ls -lh /swapfile
 
 sudo mkswap /swapfile
 
 sudo swapon /swapfile
 
-sudo nano /etc/fstab
+sudo swapon --show
 
-/swapfile swap swap defaults 0 0
+sudo cp /etc/fstab /etc/fstab.bak
+
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+sudo sysctl vm.swappiness=0
+
+sudo sysctl vm.vfs_cache_pressure=50
 
 =======================================================================================
 
