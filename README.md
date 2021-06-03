@@ -60,7 +60,7 @@ sudo apt-get -y install google-chrome-stable
 
 
 4)
-wget https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/91.0.4472.19/chromedriver_linux64.zip
 
 unzip chromedriver_linux64.zip
 
